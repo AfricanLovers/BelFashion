@@ -1,1 +1,1 @@
-print("Hello world12365762546723")
+print(input())
