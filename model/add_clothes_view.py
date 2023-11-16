@@ -43,6 +43,13 @@ class AddClothesView(QtWidgets.QMainWindow, Ui_ClothesAddMainWindow):
         self.question_text = "Вы уверены, что хотите изменить одежду?"
         self.is_edit = True
 
+    def modify_to_add(self):
+        self.addClothesButton.setText("Добавить одежду")
+        self.mainTitleLabel.setText("Добавить одежду")
+        self.question_text = "Вы уверены что хотите добавить одежду?"
+        self.clothes_id = -1
+        self.is_edit = False
+
     def load_categories(self):
         self.categoryComboBox.addItems([category[1] for category in db.get_all_categories()])
 
@@ -66,6 +73,7 @@ class AddClothesView(QtWidgets.QMainWindow, Ui_ClothesAddMainWindow):
         pixmap = QPixmap()
         pixmap.loadFromData(clothes[7])
         self.coverLabel.setPixmap(pixmap)
+        self.imagePath = clothes[7]
 
     def chooseImage(self):
         file_dialog = QFileDialog(self)
@@ -80,20 +88,20 @@ class AddClothesView(QtWidgets.QMainWindow, Ui_ClothesAddMainWindow):
     def addClothes(self):
         title = self.get_title()
         brand = self.get_brand()
-        size = self.get_size()
+        year = self.get_year()
         description = self.get_description()
         price = self.get_price()
 
-        if not title.strip() or not brand.strip() or not size.strip() or not description.strip() or price <= 0:
+        if not title.strip() or not brand.strip() or not year.strip() or not description.strip() or price <= 0:
             show_error_message("Пожалуйста, заполните все поля корректно.")
             return
 
         if show_question_message(self.question_text):
             category_id = db.get_category_id(self.categoryComboBox.currentText())
             if self.is_edit:
-                db.update_clothes(self.clothes_id, category_id=category_id, title=title, brand=brand, size=size, description=description, price=price, image=self.imagePath)
+                db.update_clothes(self.clothes_id, category_id=category_id, clothes_name=title, brand=brand, year=year, description=description, price=price, cover=self.imagePath)
             else:
-                db.add_clothes(title, brand, size, description, price, category_id, self.imagePath)
+                db.add_clothes(title, brand, year, description, price, category_id, self.imagePath)
 
             if self.main_window is not None:
                 self.main_window.admin_panel.clear_products()
@@ -108,9 +116,9 @@ class AddClothesView(QtWidgets.QMainWindow, Ui_ClothesAddMainWindow):
             self.main_window.stacked_widget.setCurrentWidget(self.main_window.admin_panel)
 
     def clear_all_fields(self):
-        self.clothesTitleLineEdit.clear()
+        self.clothesNameLineEdit.clear()
         self.brandLineEdit.clear()
-        self.sizeLineEdit.clear()
+        self.yearSpinBox.clear()
         self.descriptionTextEdit.clear()
         self.priceDoubleSpinBox.setValue(self.priceDoubleSpinBox.minimum())
         self.setupImageLabel()
@@ -122,8 +130,8 @@ class AddClothesView(QtWidgets.QMainWindow, Ui_ClothesAddMainWindow):
     def get_brand(self):
         return self.brandLineEdit.text()
 
-    def get_size(self):
-        return self.sizeLineEdit.text()
+    def get_year(self):
+        return self.yearSpinBox.text()
 
     def get_description(self):
         return self.descriptionTextEdit.toPlainText()

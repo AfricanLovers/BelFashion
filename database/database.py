@@ -114,7 +114,7 @@ class ClothesDatabase(BaseDatabase):
                        clothes_id       INTEGER PRIMARY KEY AUTOINCREMENT,
                        category_id      INTEGER,
                        clothes_name     TEXT,
-                       author           TEXT, 
+                       brand            TEXT, 
                        year             INTEGER,
                        description      TEXT,
                        price            DOUBLE,
@@ -128,33 +128,27 @@ class ClothesDatabase(BaseDatabase):
 
     def create_fts_table(self):
         query = """
-            CREATE VIRTUAL TABLE IF NOT EXISTS clothes_fts USING fts5(clothes_name, author, description);
+            CREATE VIRTUAL TABLE IF NOT EXISTS clothes_fts USING fts5(clothes_name, brand, description);
             """
         self.cursor.execute(query)
         self.db.commit()
 
-    def add_clothes(self, clothes_name, author, year, description, price, category_id, cover=None):
+    def add_clothes(self, clothes_name, brand, year, description, price, category_id, cover=None):
         if cover is not None and os.path.isfile(cover):
             cover = self.convert_to_binary_data(cover)
 
-        self.cursor.execute("""INSERT INTO clothes(clothes_name, author, year, description, price, category_id, cover) VALUES(?, ?, ?, ?, ?, ?, ?)""",
-                            (clothes_name, author, year, description, price, category_id, cover,))
+        self.cursor.execute("""INSERT INTO clothes(clothes_name, brand, year, description, price, category_id, cover) VALUES(?, ?, ?, ?, ?, ?, ?)""",
+                            (clothes_name, brand, year, description, price, category_id, cover,))
         self.db.commit()
 
         clothes_id = self.cursor.lastrowid
 
         # Manually insert into the FTS table
-        self.cursor.execute("""INSERT INTO clothes_fts(rowid, clothes_name, author, description) VALUES(?, ?, ?, ?)""",
-                            (clothes_id, clothes_name, author, description))
+        self.cursor.execute("""INSERT INTO clothes_fts(rowid, clothes_name, brand, description) VALUES(?, ?, ?, ?)""",
+                            (clothes_id, clothes_name, brand, description))
         self.db.commit()
 
     def update_clothes(self, clothes_id, **kwargs):
-        """
-        :param user_id:
-        :param clothes_id:
-        :param kwargs: description, timeline_start, timeline_end, notes, comment, clothes_review, rating, cover, is_reading
-        :return: None
-        """
 
         if "cover" in kwargs.keys():
             try:
