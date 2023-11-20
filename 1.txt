@@ -1,0 +1,265 @@
+         34153 function calls (33321 primitive calls) in 11.228 seconds
+
+   Ordered by: cumulative time
+
+   ncalls  tottime  percall  cumtime  percall filename:lineno(function)
+        1    0.018    0.018  423.766  423.766 D:\courses\courseWork\BelFashion\tests\performingTest.py:7(main)
+        6    8.167    1.361    8.167    1.361 {built-in method exec_}
+        5    0.002    0.000    6.809    1.362 D:\courses\courseWork\BelFashion\model\helper.py:74(show_question_message)
+        2    0.011    0.006    3.008    1.504 D:\courses\courseWork\BelFashion\model\add_clothes_view.py:88(addClothes)
+        1    0.007    0.007    1.658    1.658 D:\courses\courseWork\BelFashion\model\add_clothes_view.py:112(back)
+        1    0.004    0.004    1.616    1.616 D:\courses\courseWork\BelFashion\model\order_placement.py:42(confirm_order)
+        1    0.001    0.001    1.470    1.470 D:\courses\courseWork\BelFashion\model\helper.py:39(show_success_message)
+        1    0.004    0.004    1.242    1.242 D:\courses\courseWork\BelFashion\model\admin_panel.py:94(exit_account)
+       68    0.013    0.000    1.228    0.018 D:\courses\courseWork\BelFashion\model\clothes_card.py:11(__init__)
+        1    0.006    0.006    1.219    1.219 D:\courses\courseWork\BelFashion\model\main_view.py:115(exit_account)
+       72    0.092    0.001    1.063    0.015 D:\courses\courseWork\BelFashion\design\layouts\clothes_card_layout.py:15(setupUi)
+       14    0.002    0.000    1.014    0.072 D:\courses\courseWork\BelFashion\model\main_view.py:35(load_clothes)
+        1    0.001    0.001    0.868    0.868 D:\courses\courseWork\BelFashion\main.py:17(__init__)
+       12    0.006    0.001    0.709    0.059 D:\courses\courseWork\BelFashion\model\admin_panel.py:49(load_orders)
+        1    0.000    0.000    0.696    0.696 D:\courses\courseWork\BelFashion\model\main_view.py:10(__init__)
+       73    0.657    0.009    0.657    0.009 {built-in method setMinimum}
+       10    0.001    0.000    0.551    0.055 D:\courses\courseWork\BelFashion\model\admin_panel.py:79(search_orders)
+      253    0.023    0.000    0.549    0.002 D:\courses\courseWork\BelFashion\model\order_card.py:9(__init__)
+      253    0.097    0.000    0.497    0.002 D:\courses\courseWork\BelFashion\design\layouts\order_card.py:15(setupUi)
+        2    0.440    0.220    0.440    0.220 {built-in method show}
+      334    0.408    0.001    0.408    0.001 {connectSlotsByName}
+       21    0.313    0.015    0.313    0.015 {built-in method setCurrentWidget}
+     3128    0.206    0.000    0.206    0.000 {built-in method addWidget}
+        3    0.001    0.000    0.202    0.067 D:\courses\courseWork\BelFashion\model\admin_panel.py:35(load_clothes)
+       68    0.173    0.003    0.173    0.003 {built-in method loadFromData}
+        8    0.001    0.000    0.164    0.021 D:\courses\courseWork\BelFashion\model\main_view.py:74(search_clothes)
+  236/133    0.005    0.000    0.137    0.001 D:\courses\courseWork\BelFashion\model\clothes_card.py:81(change_count)
+  236/133    0.004    0.000    0.132    0.001 D:\courses\courseWork\BelFashion\model\cart.py:22(update_clothes)
+  236/133    0.002    0.000    0.130    0.001 D:\courses\courseWork\BelFashion\model\cart.py:59(callOnUpdateEvent)
+        1    0.000    0.000    0.124    0.124 D:\courses\courseWork\BelFashion\model\admin_panel.py:11(__init__)
+       72    0.005    0.000    0.123    0.002 D:\courses\courseWork\BelFashion\design\layouts\clothes_card_layout.py:142(retranslateUi)
+        1    0.000    0.000    0.122    0.122 D:\courses\courseWork\BelFashion\model\authorization.py:32(login)
+        1    0.000    0.000    0.113    0.113 D:\courses\courseWork\BelFashion\model\admin_panel.py:20(setupUI)
+  236/155    0.005    0.000    0.107    0.001 D:\courses\courseWork\BelFashion\model\cart_view.py:73(update_clothes_count)
+      562    0.101    0.000    0.101    0.000 {method 'execute' of 'sqlite3.Cursor' objects}
+        1    0.000    0.000    0.099    0.099 D:\courses\courseWork\BelFashion\model\admin_panel.py:30(set_user_id)
+        6    0.001    0.000    0.088    0.015 D:\courses\courseWork\BelFashion\model\cart_view.py:25(load_cart)
+  449/239    0.002    0.000    0.085    0.000 D:\courses\courseWork\BelFashion\model\clothes_card.py:85(set_count)
+  455/245    0.018    0.000    0.085    0.000 {built-in method setValue}
+      269    0.083    0.000    0.083    0.000 {built-in method setStyleSheet}
+      241    0.008    0.000    0.082    0.000 D:\courses\courseWork\BelFashion\model\cart_view.py:66(calculate_total_price)
+        1    0.000    0.000    0.076    0.076 D:\courses\courseWork\BelFashion\model\order_card.py:28(show_details)
+        6    0.075    0.012    0.075    0.012 {built-in method setIcon}
+      442    0.003    0.000    0.072    0.000 D:\courses\courseWork\BelFashion\database\database.py:189(get_clothes_by_id)
+      432    0.002    0.000    0.071    0.000 D:\courses\courseWork\BelFashion\model\cart_view.py:42(get_clothes_by_id)
+        5    0.000    0.000    0.067    0.013 D:\courses\courseWork\BelFashion\model\cart_view.py:61(on_add_remove_clothes)
+        1    0.000    0.000    0.060    0.060 D:\courses\courseWork\BelFashion\model\main_view.py:84(go_cart)
+        3    0.000    0.000    0.060    0.020 D:\courses\courseWork\BelFashion\model\clothes_card.py:65(add_to_cart)
+        3    0.000    0.000    0.058    0.019 D:\courses\courseWork\BelFashion\model\cart.py:10(add_clothes)
+        3    0.000    0.000    0.058    0.019 D:\courses\courseWork\BelFashion\model\cart.py:51(callOnAddEvent)
+        3    0.000    0.000    0.056    0.019 D:\courses\courseWork\BelFashion\model\main_view.py:65(filter_category)
+        1    0.000    0.000    0.053    0.053 D:\courses\courseWork\BelFashion\model\main_view.py:70(delete_filters)
+        6    0.048    0.008    0.048    0.008 {method 'commit' of 'sqlite3.Connection' objects}
+      253    0.007    0.000    0.045    0.000 D:\courses\courseWork\BelFashion\design\layouts\order_card.py:82(retranslateUi)
+  236/214    0.011    0.000    0.040    0.000 D:\courses\courseWork\BelFashion\model\main_view.py:107(on_update_clothes)
+      507    0.036    0.000    0.036    0.000 {method 'connect' of 'PyQt5.QtCore.pyqtBoundSignal' objects}
+        1    0.000    0.000    0.034    0.034 D:\courses\courseWork\BelFashion\model\registration.py:45(register)
+        1    0.000    0.000    0.034    0.034 D:\courses\courseWork\BelFashion\model\order_details_view.py:19(set_order_id)
+        1    0.000    0.000    0.034    0.034 D:\courses\courseWork\BelFashion\model\order_details_view.py:26(load_order_details)
+        4    0.001    0.000    0.031    0.008 D:\courses\courseWork\BelFashion\model\order_details_clothes_card.py:9(__init__)
+        2    0.000    0.000    0.028    0.014 D:\courses\courseWork\BelFashion\model\clothes_card.py:89(show_clothes_info)
+        2    0.000    0.000    0.021    0.010 D:\courses\courseWork\BelFashion\database\database.py:231(add_order_item)
+       75    0.001    0.000    0.017    0.000 D:\courses\courseWork\BelFashion\database\database.py:87(get_category_name)
+        1    0.000    0.000    0.015    0.015 D:\courses\courseWork\BelFashion\database\database.py:267(add_order)
+     3766    0.015    0.000    0.015    0.000 {built-in method setObjectName}
+        2    0.000    0.000    0.014    0.007 D:\courses\courseWork\BelFashion\database\database.py:151(update_clothes)
+        2    0.000    0.000    0.014    0.007 D:\courses\courseWork\BelFashion\model\clothes_info_view.py:132(show_edit_clothes_screen)
+        1    0.000    0.000    0.014    0.014 D:\courses\courseWork\BelFashion\database\database.py:38(add_user)
+      523    0.013    0.000    0.013    0.000 {method 'fetchone' of 'sqlite3.Cursor' objects}
+     2753    0.013    0.000    0.013    0.000 {translate}
+        1    0.000    0.000    0.013    0.013 D:\courses\courseWork\BelFashion\model\clothes_info_view.py:92(add_to_cart)
+        1    0.000    0.000    0.012    0.012 D:\courses\courseWork\BelFashion\model\cart.py:14(remove_clothes)
+        1    0.000    0.000    0.012    0.012 D:\courses\courseWork\BelFashion\model\cart.py:55(callOnRemoveEvent)
+        1    0.000    0.000    0.012    0.012 D:\courses\courseWork\BelFashion\model\registration.py:11(__init__)
+        1    0.010    0.010    0.012    0.012 D:\courses\courseWork\BelFashion\design\layouts\registration_layout.py:15(setupUi)
+      531    0.012    0.000    0.012    0.000 {built-in method setText}
+        1    0.001    0.001    0.012    0.012 D:\courses\courseWork\BelFashion\design\layouts\admin_layout.py:15(setupUi)
+       18    0.001    0.000    0.009    0.000 D:\courses\courseWork\BelFashion\model\clothes_card.py:43(modify_card)
+     2147    0.009    0.000    0.009    0.000 {built-in method itemAt}
+        2    0.008    0.004    0.008    0.004 {built-in method addTab}
+        1    0.000    0.000    0.007    0.007 D:\courses\courseWork\BelFashion\model\add_clothes_view.py:11(__init__)
+        3    0.000    0.000    0.007    0.002 D:\courses\courseWork\BelFashion\model\clothes_info_view.py:78(set_clothes_id)
+      827    0.007    0.000    0.007    0.000 {built-in method setMinimumSize}
+        4    0.000    0.000    0.007    0.002 D:\courses\courseWork\BelFashion\model\add_clothes_view.py:33(setupImageLabel)
+        3    0.000    0.000    0.007    0.002 D:\courses\courseWork\BelFashion\model\add_clothes_view.py:118(clear_all_fields)
+       13    0.004    0.000    0.006    0.000 D:\courses\courseWork\BelFashion\model\admin_panel.py:63(clear_layout)
+        4    0.000    0.000    0.006    0.002 D:\courses\courseWork\BelFashion\model\clothes_info_view.py:47(load_info)
+        2    0.000    0.000    0.006    0.003 D:\courses\courseWork\BelFashion\model\add_clothes_view.py:56(set_clothes_id)
+        2    0.000    0.000    0.006    0.003 D:\courses\courseWork\BelFashion\model\cart_view.py:84(go_order_placement)
+        2    0.000    0.000    0.006    0.003 D:\courses\courseWork\BelFashion\model\add_clothes_view.py:62(load_info)
+       11    0.000    0.000    0.006    0.001 D:\courses\courseWork\BelFashion\model\admin_panel.py:60(clear_orders)
+     2745    0.006    0.000    0.006    0.000 {built-in method setPointSize}
+        1    0.002    0.002    0.005    0.005 D:\courses\courseWork\BelFashion\design\layouts\add_clothes_layout.py:15(setupUi)
+        6    0.000    0.000    0.005    0.001 D:\courses\courseWork\BelFashion\database\database.py:166(search_clothes_name)
+       33    0.005    0.000    0.005    0.000 {method 'fetchall' of 'sqlite3.Cursor' objects}
+        1    0.000    0.000    0.004    0.004 D:\courses\courseWork\BelFashion\model\order_placement.py:14(__init__)
+        1    0.002    0.002    0.004    0.004 D:\courses\courseWork\BelFashion\design\layouts\main_layout.py:15(setupUi)
+        1    0.002    0.002    0.004    0.004 D:\courses\courseWork\BelFashion\design\layouts\order_placement_layout.py:15(setupUi)
+     2147    0.004    0.000    0.004    0.000 {built-in method widget}
+        7    0.000    0.000    0.004    0.001 D:\courses\courseWork\BelFashion\database\database.py:280(get_all_orders)
+        8    0.000    0.000    0.004    0.000 D:\courses\courseWork\BelFashion\database\database.py:197(get_all_clothes)
+        1    0.000    0.000    0.004    0.004 D:\courses\courseWork\BelFashion\model\clothes_info_view.py:11(__init__)
+       59    0.000    0.000    0.003    0.000 D:\courses\courseWork\BelFashion\model\clothes_card.py:77(set_removed)
+       22    0.000    0.000    0.003    0.000 D:\courses\courseWork\BelFashion\model\clothes_card.py:73(set_added)
+        1    0.001    0.001    0.003    0.003 D:\courses\courseWork\BelFashion\design\layouts\clothes_info_layout.py:15(setupUi)
+        2    0.000    0.000    0.003    0.001 D:\courses\courseWork\BelFashion\model\main_view.py:99(on_remove_clothes)
+        1    0.000    0.000    0.003    0.003 D:\courses\courseWork\BelFashion\model\order_details_view.py:9(__init__)
+      479    0.003    0.000    0.003    0.000 {built-in method setMaximumSize}
+        1    0.000    0.000    0.003    0.003 D:\courses\courseWork\BelFashion\model\cart.py:45(clear_cart)
+      334    0.003    0.000    0.003    0.000 {built-in method resize}
+        1    0.001    0.001    0.003    0.003 D:\courses\courseWork\BelFashion\design\layouts\order_details_layout.py:15(setupUi)
+        3    0.000    0.000    0.002    0.001 D:\courses\courseWork\BelFashion\model\main_view.py:90(on_add_clothes)
+       23    0.001    0.000    0.002    0.000 D:\courses\courseWork\BelFashion\model\clothes_card.py:57(check_clothes)
+        1    0.000    0.000    0.002    0.002 D:\courses\courseWork\BelFashion\model\cart_view.py:10(__init__)
+        1    0.000    0.000    0.002    0.002 D:\courses\courseWork\BelFashion\model\order_details_clothes_card.py:35(show_clothes_info)
+       13    0.001    0.000    0.002    0.000 D:\courses\courseWork\BelFashion\model\main_view.py:57(clear_products)
+        1    0.000    0.000    0.002    0.002 D:\courses\courseWork\BelFashion\model\admin_panel.py:90(add_clothes)
+      613    0.002    0.000    0.002    0.000 {built-in method sizePolicy}
+        1    0.001    0.001    0.002    0.002 D:\courses\courseWork\BelFashion\design\layouts\cart_layout.py:15(setupUi)
+        1    0.000    0.000    0.002    0.002 D:\courses\courseWork\BelFashion\model\add_clothes_view.py:25(initUI)
+        1    0.000    0.000    0.002    0.002 D:\courses\courseWork\BelFashion\model\clothes_info_view.py:87(go_back)
+        1    0.000    0.000    0.002    0.002 D:\courses\courseWork\BelFashion\model\authorization.py:9(__init__)
+        1    0.000    0.000    0.002    0.002 D:\courses\courseWork\BelFashion\design\layouts\authorization_layout.py:15(setupUi)
+        1    0.000    0.000    0.002    0.002 D:\courses\courseWork\BelFashion\model\order_placement.py:74(cancel_order)
+        5    0.000    0.000    0.002    0.000 D:\courses\courseWork\BelFashion\database\database.py:276(get_orders_by_user)
+        3    0.000    0.000    0.002    0.001 D:\courses\courseWork\BelFashion\database\database.py:201(get_clothes_by_category)
+        4    0.000    0.000    0.001    0.000 D:\courses\courseWork\BelFashion\model\clothes_info_view.py:104(set_removed)
+        8    0.000    0.000    0.001    0.000 D:\courses\courseWork\BelFashion\model\cart_view.py:46(get_category_name)
+        6    0.001    0.000    0.001    0.000 {built-in method setStandardButtons}
+      613    0.001    0.000    0.001    0.000 {built-in method setSizePolicy}
+      254    0.001    0.000    0.001    0.000 {built-in method layout}
+       11    0.001    0.000    0.001    0.000 D:\courses\courseWork\BelFashion\model\cart_view.py:50(clear_products)
+      516    0.001    0.000    0.001    0.000 {built-in method count}
+      613    0.001    0.000    0.001    0.000 {built-in method setHorizontalStretch}
+      236    0.001    0.000    0.001    0.000 {built-in method value}
+      613    0.001    0.000    0.001    0.000 {built-in method setHeightForWidth}
+        3    0.000    0.000    0.001    0.000 D:\courses\courseWork\BelFashion\database\database.py:42(get_user)
+      613    0.001    0.000    0.001    0.000 {built-in method setVerticalStretch}
+       20    0.001    0.000    0.001    0.000 {singleShot}
+       68    0.001    0.000    0.001    0.000 {built-in method setPixmap}
+        2    0.000    0.000    0.001    0.000 D:\courses\courseWork\BelFashion\model\admin_panel.py:57(clear_products)
+      283    0.001    0.000    0.001    0.000 {built-in method deleteLater}
+        2    0.000    0.000    0.001    0.000 D:\courses\courseWork\BelFashion\database\database.py:91(get_category_id)
+      409    0.001    0.000    0.001    0.000 {built-in method setBold}
+        3    0.000    0.000    0.001    0.000 D:\courses\courseWork\BelFashion\model\clothes_info_view.py:72(set_is_admin)
+        2    0.000    0.000    0.001    0.000 D:\courses\courseWork\BelFashion\model\clothes_info_view.py:32(modify_to_admin)
+      613    0.001    0.000    0.001    0.000 {built-in method hasHeightForWidth}
+       41    0.001    0.000    0.001    0.000 {built-in method hide}
+      145    0.001    0.000    0.001    0.000 {built-in method setAlignment}
+       20    0.001    0.000    0.001    0.000 {method 'disconnect' of 'PyQt5.QtCore.pyqtBoundSignal' objects}
+      288    0.001    0.000    0.001    0.000 {built-in method setTextInteractionFlags}
+       72    0.001    0.000    0.001    0.000 {built-in method setAutoDefault}
+       75    0.000    0.000    0.001    0.000 D:\courses\courseWork\BelFashion\model\cart.py:33(get_clothes_ids)
+        1    0.000    0.000    0.001    0.001 D:\courses\courseWork\BelFashion\database\database.py:239(get_order_items_by_order_id)
+       77    0.001    0.000    0.001    0.000 {built-in method setFamily}
+        1    0.000    0.000    0.001    0.001 D:\courses\courseWork\BelFashion\model\registration.py:30(validate_inputs)
+        1    0.000    0.000    0.001    0.001 D:\courses\courseWork\BelFashion\database\database.py:57(check_user)
+        1    0.000    0.000    0.001    0.001 D:\courses\courseWork\BelFashion\model\clothes_info_view.py:100(set_added)
+      409    0.001    0.000    0.001    0.000 {built-in method setWeight}
+        1    0.000    0.000    0.000    0.000 {built-in method setDecimals}
+        1    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\database\database.py:54(user_in_db)
+        2    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\clothes_info_view.py:112(on_remove_clothes)
+       72    0.000    0.000    0.000    0.000 {built-in method setTextFormat}
+        1    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\registration.py:21(show_password)
+      418    0.000    0.000    0.000    0.000 {built-in method builtins.isinstance}
+        2    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\database\database.py:99(get_all_categories)
+        5    0.000    0.000    0.000    0.000 {built-in method setEchoMode}
+        1    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\main_view.py:48(load_categories)
+       41    0.000    0.000    0.000    0.000 {built-in method text}
+      145    0.000    0.000    0.000    0.000 {built-in method setWordWrap}
+        4    0.000    0.000    0.000    0.000 {built-in method setReadOnly}
+        1    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\add_clothes_view.py:53(load_categories)
+      250    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\cart.py:30(get_clothes)
+        1    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\design\layouts\order_placement_layout.py:119(retranslateUi)
+        1    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\database\database.py:61(is_admin)
+        1    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\design\layouts\clothes_info_layout.py:149(retranslateUi)
+        1    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\design\layouts\registration_layout.py:124(retranslateUi)
+        6    0.000    0.000    0.000    0.000 {built-in method clear}
+       66    0.000    0.000    0.000    0.000 {built-in method setScaledContents}
+       75    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\cart.py:34(<listcomp>)
+        4    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\add_clothes_view.py:40(modify_to_edit)
+        1    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\design\layouts\add_clothes_layout.py:161(retranslateUi)
+        1    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\design\layouts\admin_layout.py:140(retranslateUi)
+        2    0.000    0.000    0.000    0.000 <frozen genericpath>:27(isfile)
+       74    0.000    0.000    0.000    0.000 {built-in method setFlat}
+        1    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\design\layouts\main_layout.py:104(retranslateUi)
+       79    0.000    0.000    0.000    0.000 {method 'append' of 'list' objects}
+       77    0.000    0.000    0.000    0.000 {built-in method setItalic}
+       30    0.000    0.000    0.000    0.000 {built-in method setWidget}
+       72    0.000    0.000    0.000    0.000 {built-in method setDefault}
+        1    0.000    0.000    0.000    0.000 {built-in method addItems}
+        1    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\design\layouts\order_details_layout.py:67(retranslateUi)
+        1    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\design\layouts\authorization_layout.py:107(retranslateUi)
+        9    0.000    0.000    0.000    0.000 {built-in method setWindowTitle}
+        2    0.000    0.000    0.000    0.000 {built-in method currentText}
+        1    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\design\layouts\cart_layout.py:84(retranslateUi)
+        2    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\add_clothes_view.py:127(get_title)
+        2    0.000    0.000    0.000    0.000 {built-in method addItem}
+       10    0.000    0.000    0.000    0.000 {built-in method setCentralWidget}
+        2    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\add_clothes_view.py:136(get_description)
+        2    0.000    0.000    0.000    0.000 {built-in method setTitle}
+       34    0.000    0.000    0.000    0.000 {method 'strip' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\order_placement.py:34(get_email)
+        1    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\add_clothes_view.py:46(modify_to_add)
+        2    0.000    0.000    0.000    0.000 {built-in method addLayout}
+       18    0.000    0.000    0.000    0.000 {method 'replace' of 'str' objects}
+        2    0.000    0.000    0.000    0.000 {built-in method toPlainText}
+       21    0.000    0.000    0.000    0.000 {built-in method builtins.len}
+        2    0.000    0.000    0.000    0.000 {built-in method nt.stat}
+        2    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\add_clothes_view.py:139(get_price)
+        2    0.000    0.000    0.000    0.000 {method 'match' of 're.Pattern' objects}
+        2    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\add_clothes_view.py:133(get_year)
+        3    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\clothes_info_view.py:69(set_parent_window)
+        1    0.000    0.000    0.000    0.000 {built-in method setLayout}
+        2    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\database\database.py:160(<listcomp>)
+        1    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\order_placement.py:31(get_address)
+        2    0.000    0.000    0.000    0.000 {built-in method setItemText}
+        1    0.000    0.000    0.000    0.000 {built-in method setValidator}
+        7    0.000    0.000    0.000    0.000 {built-in method setSpacing}
+        2    0.000    0.000    0.000    0.000 {built-in method isChecked}
+        1    0.000    0.000    0.000    0.000 {built-in method setFrameShadow}
+        6    0.000    0.000    0.000    0.000 {built-in method setPlaceholderText}
+        3    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\clothes_info_view.py:108(on_add_clothes)
+        1    0.000    0.000    0.000    0.000 {built-in method setFont}
+        3    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\cart.py:36(addOnAddCallback)
+        5    0.000    0.000    0.000    0.000 {built-in method setGeometry}
+        2    0.000    0.000    0.000    0.000 {built-in method setTabText}
+        1    0.000    0.000    0.000    0.000 {built-in method currentIndex}
+        5    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\clothes_info_view.py:66(set_last_window)
+        5    0.000    0.000    0.000    0.000 {built-in method setWidgetResizable}
+        1    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\order_placement.py:38(get_phone)
+        2    0.000    0.000    0.000    0.000 {built-in method setMinimumWidth}
+        2    0.000    0.000    0.000    0.000 {built-in method indexOf}
+        1    0.000    0.000    0.000    0.000 {built-in method setFrameShape}
+        2    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\add_clothes_view.py:130(get_brand)
+        1    0.000    0.000    0.000    0.000 {built-in method setContentsMargins}
+        3    0.000    0.000    0.000    0.000 {built-in method minimum}
+        1    0.000    0.000    0.000    0.000 {built-in method setHorizontalSpacing}
+        1    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\clothes_info_view.py:116(hide_buttons)
+        2    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\order_placement.py:25(set_total_price)
+        2    0.000    0.000    0.000    0.000 {method 'join' of 'str' objects}
+        1    0.000    0.000    0.000    0.000 {built-in method setMaximum}
+        1    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\main_view.py:54(set_user_id)
+        2    0.000    0.000    0.000    0.000 {built-in method setSizeConstraint}
+        2    0.000    0.000    0.000    0.000 {built-in method setStretch}
+        3    0.000    0.000    0.000    0.000 {built-in method setMinimumHeight}
+        3    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\cart.py:39(addOnRemoveCallback)
+        4    0.000    0.000    0.000    0.000 {method 'keys' of 'dict' objects}
+        1    0.000    0.000    0.000    0.000 {method 'disable' of '_lsprof.Profiler' objects}
+        1    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\order_details_view.py:23(set_parent_window)
+        1    0.000    0.000    0.000    0.000 {built-in method setCurrentIndex}
+        1    0.000    0.000    0.000    0.000 {built-in method setVerticalSpacing}
+        1    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\cart_view.py:81(set_user_id)
+        1    0.000    0.000    0.000    0.000 {method 'clear' of 'list' objects}
+        1    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\add_clothes_view.py:54(<listcomp>)
+        1    0.000    0.000    0.000    0.000 {method 'pop' of 'list' objects}
+        2    0.000    0.000    0.000    0.000 {method 'values' of 'dict' objects}
+        2    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\cart.py:42(addOnUpdateCallback)
+        1    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\authorization.py:26(validate_inputs)
+        2    0.000    0.000    0.000    0.000 D:\courses\courseWork\BelFashion\model\order_placement.py:28(set_user_id)

@@ -67,6 +67,7 @@ class OrderPlacement(QMainWindow, Ui_OrderPlacement):
 
         show_success_message("Ваш заказ успешно принят!")
         cart.clear_cart()
+        self.clear_fields()
         self.main_window.mainMenu.clear_products()
         self.main_window.mainMenu.load_clothes()
         self.main_window.stacked_widget.setCurrentWidget(self.main_window.mainMenu)
@@ -74,3 +75,15 @@ class OrderPlacement(QMainWindow, Ui_OrderPlacement):
     def cancel_order(self):
         if self.main_window is not None:
             self.main_window.stacked_widget.setCurrentWidget(self.main_window.cart)
+
+    def clear_fields(self):
+        self.addressLineEdit.clear()
+        self.emailLineEdit.clear()
+        self.phoneLineEdit.clear()
+
+        self.termsCheckBox.setChecked(False)
+
+        self.set_total_price(0)
+        self.set_user_id(-1)
+
+        self.paymentComboBox.setCurrentIndex(0)

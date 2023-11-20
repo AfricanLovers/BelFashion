@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_ClothesAddMainWindow(object):
     def setupUi(self, ClothesAddMainWindow):
         ClothesAddMainWindow.setObjectName("ClothesAddMainWindow")
-        ClothesAddMainWindow.resize(947, 784)
+        ClothesAddMainWindow.resize(954, 793)
         self.centralWidget = QtWidgets.QWidget(ClothesAddMainWindow)
         self.centralWidget.setObjectName("centralWidget")
         self.mainVerticalLayout = QtWidgets.QVBoxLayout(self.centralWidget)
@@ -55,6 +55,7 @@ class Ui_ClothesAddMainWindow(object):
         font = QtGui.QFont()
         font.setPointSize(12)
         self.clothesNameLineEdit.setFont(font)
+        self.clothesNameLineEdit.setMaxLength(200)
         self.clothesNameLineEdit.setObjectName("clothesNameLineEdit")
         self.formLayout.setWidget(2, QtWidgets.QFormLayout.FieldRole, self.clothesNameLineEdit)
         self.brandLabel = QtWidgets.QLabel(self.centralWidget)

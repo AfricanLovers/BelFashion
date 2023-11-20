@@ -30,6 +30,7 @@ class Ui_MainWindow(object):
         self.leftMenuLayout.setObjectName("leftMenuLayout")
         self.searchBar = QtWidgets.QLineEdit(self.centralwidget)
         self.searchBar.setStyleSheet("font: 14pt \"MS Shell Dlg 2\"; padding: 10px; border: 2px solid #aaa; border-radius: 5px;")
+        self.searchBar.setMaxLength(100)
         self.searchBar.setObjectName("searchBar")
         self.leftMenuLayout.addWidget(self.searchBar)
         self.categoriesList = QtWidgets.QListWidget(self.centralwidget)
@@ -104,7 +105,7 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "Clothesstore"))
-        self.titleLabel.setText(_translate("MainWindow", "store"))
+        self.titleLabel.setText(_translate("MainWindow", "BelFashion"))
         self.searchBar.setPlaceholderText(_translate("MainWindow", "Поиск..."))
         self.deleteFiltersBtn.setText(_translate("MainWindow", "Убрать Фильтрацию"))
         self.cartBtn.setText(_translate("MainWindow", "Корзина"))
